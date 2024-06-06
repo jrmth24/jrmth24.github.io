@@ -6,6 +6,6 @@ document.getElementById('saveTXTButton').addEventListener('click', function() {
 //Funcion para preparar la impresion
 function printMirroredBraille(textToPrint) {
     localStorage.setItem('translatedText', textToPrint); // Almacenar en localStorage
-    window.location.href = './view/print.html'; // Cambiar a la página de destino
+    window.location.href = './print.html'; // Cambiar a la página de destino
     
 }
