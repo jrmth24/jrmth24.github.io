@@ -1,7 +1,7 @@
 /**
  * Escuchador de eventos para imprimir el Braille
  */
-document.getElementById('saveTXTButtonNormal').addEventListener('click', function()=> {
+document.getElementById('saveTXTButtonNormal').addEventListener('click', function(){
     printBraille(document.getElementById('brailleOutput').textContent);
 });
 
