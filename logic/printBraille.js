@@ -1,18 +1,12 @@
 /**
- * Escuchador de eventos para imprimir el Braille En espejo
+ * Escuchador de eventos para imprimir el Braille
  */
-document.getElementById('saveTXTButton').addEventListener('click', ()=> {
-    localStorage.setItem('translatedText',document.getElementById('brailleOutput').textContent ); // Almacenar en localStorage
-    window.location.href = '../view/printMirror.html'; // Cambiar a la página de destino
-    
+document.getElementById('saveTXTButton').addEventListener('click', function()=> {
+    printBraille(document.getElementById('brailleOutput').textContent);
 });
 
-
-/**
- * Escuchador de eventos para imprimir el Braille En espejo
- */
-document.getElementById('saveTXTButtonNormal').addEventListener('click', ()=> {
-    localStorage.setItem('translatedText', document.getElementById('brailleOutput').textContent); // Almacenar en localStorage
+function printBraille(textToPrint) {
+    localStorage.setItem('translatedText', textToPrint); // Almacenar en localStorage
     window.location.href = '../view/print.html'; // Cambiar a la página de destino
- 
-});
+    
+}
