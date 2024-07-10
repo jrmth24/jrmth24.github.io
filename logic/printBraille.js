@@ -3,7 +3,7 @@
  */
 document.getElementById('saveTXTButton').addEventListener('click', ()=> {
     localStorage.setItem('translatedText',document.getElementById('brailleOutput').textContent ); // Almacenar en localStorage
-    window.location.href = './printMirror.html'; // Cambiar a la página de destino
+    window.location.href = '../view/printMirror.html'; // Cambiar a la página de destino
     
 });
 
@@ -13,6 +13,6 @@ document.getElementById('saveTXTButton').addEventListener('click', ()=> {
  */
 document.getElementById('saveTXTButtonNormal').addEventListener('click', ()=> {
     localStorage.setItem('translatedText', document.getElementById('brailleOutput').textContent); // Almacenar en localStorage
-    window.location.href = './print.html'; // Cambiar a la página de destino
+    window.location.href = '../view/print.html'; // Cambiar a la página de destino
  
 });
